@@ -1,25 +1,39 @@
 import React from 'react';
-import linkedinLogo from '../assets/linkedin.svg'; // Adjust the path as needed
-import twitterLogo from '../assets/twitter.svg'; // Adjust the path as needed
-import githubLogo from '../assets/github.svg'; // Adjust the path as needed
+import linkedinIcon from '../assets/linkedin.svg';
+import twitterIcon from '../assets/twitter.svg';
+import githubIcon from '../assets/github.svg';
+import instagramIcon from '../assets/instagram.svg';
+
+
+const socialLinks = [
+  { href: "https://twitter.com", src: twitterIcon, alt: "Twitter" },
+  { href: "https://github.com", src: githubIcon, alt: "GitHub" },
+  { href: "https://instagram.com", src: instagramIcon, alt: "Instagram" },
+  { href: "https://linkedin.com", src: linkedinIcon, alt: "LinkedIn" },
+];
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white mt-12 ">
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center lg:px-64">
-        <div className="text-sm">
-          © 2024 Blockchain Society. All rights reserved.
-        </div>
+    <footer className="bg-gray-800 text-white py-4">
+      <div className="container mx-auto px-4 flex justify-between items-center">
+        <p className="text-gray-400">© 2024 Blockchain Society, IIT Delhi</p>
         <div className="flex space-x-4">
-          <a href="https://in.linkedin.com/company/blockchain-society-iit-delhi" target="_blank" rel="noopener noreferrer">
-            <img src={linkedinLogo} alt="LinkedIn" className="w-6 h-6 filter grayscale hover:grayscale-0 transition" />
+          {socialLinks.map((link) => (
+          <a 
+            key={link.alt}
+            href={link.href} 
+            className="transition-transform transition-opacity duration-300"
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <img 
+              src={link.src} 
+              alt={link.alt} 
+              className="w-6 h-6 text-gray-400 hover:text-gray-300 hover:opacity-80 hover:scale-110"
+            />
           </a>
-          <a href="https://x.com/blocsociitd" target="_blank" rel="noopener noreferrer">
-            <img src={twitterLogo} alt="Twitter" className="w-6 h-6 filter grayscale hover:grayscale-0 transition" />
-          </a>
-          <a href="https://github.com/blocsoc-iitd" target="_blank" rel="noopener noreferrer">
-            <img src={githubLogo} alt="GitHub" className="w-6 h-6 filter grayscale hover:grayscale-0 transition" />
-          </a>
+
+          ))}
         </div>
       </div>
     </footer>
