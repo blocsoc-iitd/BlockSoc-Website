@@ -16,7 +16,7 @@ function App() {
     <Router>
       <div className="flex flex-col min-h-screen">
         <Header />
-        <main className="flex-grow container mx-auto p-4 md:px-8 lg:px-64">
+        <main className="flex-grow mx-auto p-4" style={{ maxWidth: '800px' }}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<AboutUs />} />

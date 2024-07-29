@@ -22,9 +22,10 @@ function Home() {
           <img src={image4} alt="Image 4" className="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-300" />
         </div>
       </div>
-      <h3>something something heading </h3>
+      <h2 className='text-3xl'> something something Society </h2>
       <p className="text-gray-600">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus praesentium unde, ab optio illum error harum assumenda quibusdam quis, temporibus suscipit, accusantium molestias sed similique? Doloribus, repellat! Sequi, vel amet?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ea debitis non dolorem ad laboriosam at saepe, consectetur odit id natus fuga rem quis ipsa deleniti voluptas iste enim velit?
       </p>
     </div>
   );

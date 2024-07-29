@@ -4,7 +4,7 @@ import logo from '../assets/logoB.svg'; // Adjust the path as needed
 const Header = () => {
   return (
     <header className="bg-gray-800 text-white">
-      <div className="container mx-auto px-8 py-4 lg:px-64">
+      <div className="container mx-auto mb-4"style={{ maxWidth: '800px' }}>
         <div className="flex items-center border-b border-gray-600 pb-4">
           <img src={logo} alt="Blockchain Society Logo" className="w-32 h-32 mr-8" /> {/* Logo on the side */}
           <div className="flex flex-col">
