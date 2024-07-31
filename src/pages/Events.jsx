@@ -5,7 +5,7 @@ function Events() {
     <div className="p-4">
       <h1 className="text-3xl font-bold text-gray-800">Events</h1>
       <p className="text-gray-600 mt-4">
-        Upcoming and past events organized by the Blockchain Society.
+        Upcoming and past events organized by the nvkdsnvvndsjnvjdsnvjkdbsjkvbsdjcnjnBlockchain Society.
       </p>
     </div>
   );

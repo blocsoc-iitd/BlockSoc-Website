@@ -9,6 +9,7 @@ import Resources from './pages/Resources';
 import Team from './pages/Team';
 import Achievements from './pages/Achievements';
 import Events from './pages/Events';
+import './index.css';
 
 
 function App() {
@@ -19,7 +20,6 @@ function App() {
         <main className="flex-grow mx-auto p-4" style={{ maxWidth: '800px' }}>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<AboutUs />} />
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/resources" element={<Resources />} />
             <Route path="/team" element={<Team />} />
