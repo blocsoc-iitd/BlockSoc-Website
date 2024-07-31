@@ -10,8 +10,8 @@ const Header = () => {
         <div className="flex items-center border-b border-gray-600 pb-4">
           <img src={logo} alt="Blockchain Society Logo" className="w-32 h-32 mr-8" /> {/* Logo on the side */}
           <div className="flex flex-col">
-            <h1 className="text-5xl font-semibold mb-2">Blockchain Society</h1>
-            <h3 className="text-2xl font-semibold">Indian Institute of Technology, Delhi</h3>
+            <h1 className="text-6xl font-semibold mb-2">Blockchain Society</h1>
+            <h3 className="text-3xl font-semibold">Indian Institute of Technology, Delhi</h3>
           </div>
         </div>
         <nav className="mt-2 border-t border-gray-600 pt-2">
