@@ -15,7 +15,7 @@ const socialLinks = [
 const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white py-4">
-      <div className="container mx-auto flex justify-between items-center"style={{ maxWidth: '800px' }}>
+      <div className="container flex justify-between items-center mx-auto px-4 mb-4 max-w-screen-md">
         <p className="text-gray-400">© 2024 Blockchain Society, IIT Delhi</p>
         <div className="flex space-x-4">
           {socialLinks.map((link) => (

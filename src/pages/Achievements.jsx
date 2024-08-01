@@ -23,7 +23,7 @@ const Achievements = () => {
           {achievements.map((achievement, index) => (
             <li key={index} className="relative flex items-start">
               <div className="absolute -left-2 w-4 h-4 bg-gray-300 rounded-full z-10"></div>
-              <div className="ml-8 p-4 bg-white rounded shadow-md w-full transform transition-transform hover:scale-105">
+              <div className="ml-8 p-4 bg-white rounded shadow-md w-full transform transition-transform hover:scale-105 cursor-pointer">
                 <h3 className="text-xl font-semibold">{achievement.title}</h3>
                 <p className="text-sm text-gray-500">{achievement.date}</p>
                 <p className="mt-2 text-gray-700">{achievement.description}</p>
