@@ -22,11 +22,26 @@ function Home() {
           <img src={image4} alt="Image 4" className="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-300" />
         </div>
       </div>
-      <h2 className='text-3xl'> something something Society </h2>
       <p className="text-gray-600">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus praesentium unde, ab optio illum error harum assumenda quibusdam quis, temporibus suscipit, accusantium molestias sed similique? Doloribus, repellat! Sequi, vel amet?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ea debitis non dolorem ad laboriosam at saepe, consectetur odit id natus fuga rem quis ipsa deleniti voluptas iste enim velit?
+      At the Blockchain Society, we are dedicated to exploring and advancing the world of blockchain technology. Our community consists of enthusiasts, developers, and researchers who are passionate about crypto, DeFi, Web3.0, and ZK proofs. We believe in the transformative power of blockchain and its potential to revolutionize various industries
       </p>
+      <section className="mb-6 mt-6">
+        <h2 className="text-3xl font-semibold text-gray-700 mb-4">Who We Are</h2>
+        <p className="text-gray-600">
+        The Blockchain Society at the Indian Institute of Technology, Delhi, is a vibrant community focused on education, research, and innovation in the blockchain space. Our members collaborate on projects, share knowledge, and engage in meaningful discussions to drive the adoption and development of blockchain technology.  </p>
+      </section>
+      <section className="mb-6">
+        <h2 className="text-3xl font-semibold text-gray-700 mb-4">Our Mission</h2>
+        <p className="text-gray-600">
+        Our mission is to foster a deep understanding of blockchain technology and its applications. We aim to provide resources, organize events, and create opportunities for hands-on experience to empower our members to become leaders in the blockchain revolution.  </p>
+      </section>
+      <section className="mb-6">
+        <h2 className="text-3xl font-semibold text-gray-700 mb-4">Get Involved</h2>
+        <p className="text-gray-600">
+          We are always open to collaborations. Whether you are a beginner or an expert, there is a place for you in our community. Join us to learn, collaborate, and contribute to the future of blockchain technology.
+        </p>
+      </section>
+
     </div>
   );
 }
