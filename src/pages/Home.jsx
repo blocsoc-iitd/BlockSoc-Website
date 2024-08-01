@@ -41,7 +41,6 @@ function Home() {
           We are always open to collaborations. Whether you are a beginner or an expert, there is a place for you in our community. Join us to learn, collaborate, and contribute to the future of blockchain technology.
         </p>
       </section>
-
     </div>
   );
 }
