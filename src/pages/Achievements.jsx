@@ -1,16 +1,31 @@
 import React from 'react';
 
 const achievements = [
-  { date: 'June 2023', title: 'Achievement 1', description: 'Description of achievement 1.' },
-  { date: 'May 2023', title: 'Achievement 2', description: 'Description of achievement 2.' },
-  { date: 'April 2023', title: 'Achievement 3', description: 'Description of achievement 3.' },
-  { date: 'March 2023', title: 'Achievement 4', description: 'Description of achievement 4.' },
-  { date: 'February 2023', title: 'Achievement 5', description: 'Description of achievement 5.' },
-  { date: 'January 2023', title: 'Achievement 6', description: 'Description of achievement 6.' },
-  { date: 'December 2022', title: 'Achievement 7', description: 'Description of achievement 7.' },
-  { date: 'November 2022', title: 'Achievement 8', description: 'Description of achievement 8.' },
-  { date: 'October 2022', title: 'Achievement 9', description: 'Description of achievement 9.' },
-  { date: 'September 2022', title: 'Achievement 10', description: 'Description of achievement 10.' },
+  { date: 'March 2024',
+    title: 'EthMumbai 2024', 
+    description: "Our institute's team of nine students participated in an international hackathon organized by the Ethereum Foundation in Mumbai. We won the main track and secured a $2050 prize, showcasing our expertise and innovation in the Web3 domain." },
+
+  { date: 'March 2024', 
+    title: 'IITR Cognizance 2024', 
+    description: 'Our teams from DevClub and BlocSoc participated in this fest to explore the Web3 landscape in other colleges, gaining insights and experience. The event was a blend of technical challenges and networking opportunities' },
+
+  { date: 'December 2023', 
+    title: 'EthIndia 2023', 
+    description: 'An international hackathon organized by the Ethereum Foundation in Bengaluru during December 2023. This prestigious event attracted global talent and offered our students a chance to compete at the highest level. Seven students from our college participated, showcasing innovative projects and competing for various prizes.' },
+
+  { date: 'October 2023', 
+    title: 'Unfold 2023', 
+    description: 'This hackathon provided an excellent opportunity for freshers to gain exposure to the Web3 ecosystem. Two of our second-year students participated, gaining valuable experience in blockchain development and networking with industry professionals' },
+
+  { date: 'February 2023', title: 'Achievement 1', description: 'Description of achievement 1.' },
+
+  { date: 'January 2023', title: 'Achievement 2', description: 'Description of achievement 2.' },
+
+  { date: 'December 2022', title: 'Achievement 3', description: 'Description of achievement 3.' },
+
+  { date: 'November 2022', title: 'Achievement 4', description: 'Description of achievement 4.' },
+  
+  { date: 'October 2022', title: 'Achievement 5', description: 'Description of achievement 5.' },
 ];
 
 const Achievements = () => {
