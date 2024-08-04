@@ -21,10 +21,10 @@ const Header = () => {
           <ul className="flex flex-wrap justify-center sm:justify-start space-x-2 sm:space-x-6 text-sm sm:text-base">
             {NavList.map((item, index) => (
               <li key={index} className="relative group">
-                <a href={item === 'Home' ? "\\" : `/${item.toLowerCase().replace(/\s+/g, '-')}`} className="text-white hover:text-white transition-colors duration-200">
+                <a href={item === 'Home' ? "\\" : `/${item.toLowerCase().replace(/\s+/g, '-')}`} className="text-neonBlue hover:text-neonBlue transition-colors duration-200">
                   {item}
                 </a>
-                <div className="absolute left-0 bottom-[-2px] w-full h-[2px] bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                <div className="absolute left-0 bottom-[-2px] w-full h-[2px] bg-neonBlue transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
               </li>
             ))}
           </ul>

@@ -17,8 +17,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        neonBlue: '#00bfff',
-        neonBlueHover: '#1e90ff',
+        'neonBlue': '#00bfff',
+        'customBlue': '#20d0f6',
       },
       transitionProperty: {
         'underline': 'transform',

@@ -6,7 +6,7 @@ const achievements = [
     description: "Our institute's team of nine students participated in an international hackathon organized by the Ethereum Foundation in Mumbai. We won the main track and secured a $2050 prize, showcasing our expertise and innovation in the Web3 domain." },
 
   { date: 'March 2024', 
-    title: 'IITR Cognizance 2024', 
+    title: 'Speakers at IITR Cognizance 2024', 
     description: 'Our teams from DevClub and BlocSoc participated in this fest to explore the Web3 landscape in other colleges, gaining insights and experience. The event was a blend of technical challenges and networking opportunities' },
 
   { date: 'December 2023', 
@@ -24,7 +24,7 @@ const achievements = [
   { date: 'December 2022', title: 'Achievement 3', description: 'Description of achievement 3.' },
 
   { date: 'November 2022', title: 'Achievement 4', description: 'Description of achievement 4.' },
-  
+
   { date: 'October 2022', title: 'Achievement 5', description: 'Description of achievement 5.' },
 ];
 
