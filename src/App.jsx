@@ -10,11 +10,10 @@ import Achievements from './pages/Achievements';
 import Events from './pages/Events';
 import './index.css';
 
-
 function App() {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen">
+      <div className="app-background flex flex-col min-h-screen bg-primary bg-custom-gradient">
         <Header />
         <main className="flex-grow mx-auto p-4" style={{ maxWidth: '800px' }}>
           <Routes>

@@ -27,9 +27,9 @@ const Events = () => {
 
   return (
     <div className="container mx-auto p-4 md:px-8 lg:px-8" style={{ maxWidth: '1200px' }}>
-      <h1 className="text-3xl font-bold text-gray-800 mb-8">Events</h1>
+      <h1 className="text-3xl font-bold text-neonGreen mb-8">Events</h1>
       <div className="mb-12">
-        <h2 className="text-2xl font-bold text-gray-700 mb-4">Upcoming Events</h2>
+        <h2 className="text-2xl font-bold text-neonYellow mb-4">Upcoming Events</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
           {upcomingEvents.map((event, index) => (
             <div key={index} className="p-4 bg-white rounded shadow-md transform transition-transform hover:scale-105 cursor-pointer">
@@ -48,7 +48,7 @@ const Events = () => {
       </div>
       <hr className="border-gray-300 my-8" />
       <div>
-        <h2 className="text-2xl font-bold text-gray-700 mb-4">Past Events</h2>
+        <h2 className="text-2xl font-bold text-neonYellow mb-4">Past Events</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {pastEvents.map((event, index) => (
             <div key={index} className="p-4 bg-white rounded shadow-md transform transition-transform hover:scale-105 cursor-pointer">

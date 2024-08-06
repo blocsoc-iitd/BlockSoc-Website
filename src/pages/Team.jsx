@@ -99,7 +99,7 @@ const teamMembers = [
 const Team = () => {
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-3xl font-bold text-gray-800 mb-8 text-center">Our Team</h1>
+      <h1 className="text-3xl font-bold text-neonGreen mb-8 text-center">Our Team</h1>
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 ">
         {teamMembers.map((member, index) => (
           <div key={index} className="bg-white rounded-lg shadow-md p-4 text-center transform transition-transform hover:scale-105 cursor-pointer">

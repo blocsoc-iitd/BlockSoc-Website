@@ -1,14 +1,3 @@
-// // tailwind.config.js
-// module.exports = {
-//   content: [
-//     "./index.html",
-//     "./src/**/*.{js,ts,jsx,tsx}",
-//   ],
-//   theme: {
-//     extend: {},
-//   },
-//   plugins: [],
-// }
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -19,9 +8,19 @@ module.exports = {
       colors: {
         'neonBlue': '#00bfff',
         'customBlue': '#20d0f6',
+        'webBlue':'#03C8FD',
+        'neonYellow':'#F2EA02',
+        'neonRed':'#FF3131',
+        'neonGreen':'#39FF14',
+        'neonPurple':'#B026FF',
+         primary: '#171932',
+         accent: '#164E35',
       },
       transitionProperty: {
         'underline': 'transform',
+      },
+      backgroundImage: {
+        'custom-gradient': 'radial-gradient(circle at top left, #164E35, transparent), radial-gradient(circle at middle right, #164E35, transparent), radial-gradient(circle at bottom left, #164E35, transparent)',
       },
     },
   },

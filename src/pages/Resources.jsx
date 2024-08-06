@@ -38,7 +38,7 @@ const resources = [
     ],
   },
   {
-    heading: 'Articles/Blogs',
+    heading: 'Articles',
     links: [
       { name: 'Threesigma.xyz', url: 'https://threesigma.xyz/blog' },
       { name: 'Paradigam', url: 'https://www.paradigm.xyz/writing' },
@@ -67,15 +67,23 @@ const resources = [
 const Resources = () => {
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-3xl font-bold text-gray-800 mb-8">Resources</h1>
+      <h1 className="text-3xl font-bold text-neonGreen mb-8">Resources</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {resources.map((resource, index) => (
-          <div key={index} className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-            <h2 className="text-2xl font-semibold mb-4">{resource.heading}</h2>
+          <div
+            key={index}
+            className="bg-transparent p-6 rounded-lg shadow-md border-2 border-neonBlue"
+          >
+            <h2 className="text-3xl font-semibold text-neonYellow mb-4">{resource.heading}</h2>
             <ul className="list-disc list-inside space-y-2">
               {resource.links.map((link, i) => (
                 <li key={i}>
-                  <a href={link.url} className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href={link.url}
+                    className="text-white text-base hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     {link.name}
                   </a>
                 </li>
