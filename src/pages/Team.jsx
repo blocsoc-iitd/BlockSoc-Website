@@ -21,6 +21,7 @@ const teamMembers = [
     linkedin: 'https://www.linkedin.com/',
     twitter: 'https://twitter.com/',
     github: 'https://github.com/johndoe',
+    about: 'Monal is the Overall Coordinator '
   },
   {
     name: 'Manoj Kumar Gorle',
@@ -29,6 +30,7 @@ const teamMembers = [
     linkedin: 'https://www.linkedin.com/',
     twitter: 'https://twitter.com/',
     github: 'https://github.com/manojkgorle',
+    about: 'Manoj assists is co-overall coordinatior'
   },
   {
     name: 'Muskan Kumari',
@@ -94,48 +96,65 @@ const teamMembers = [
     twitter: 'https://twitter.com/',
     github: 'https://github.com/shivannsh',
   },
+  {
+    name: 'Arnav Panjla',
+    position: 'NFT :D',
+    avatar: member10,
+    linkedin: 'https://www.linkedin.com/',
+    twitter: 'https://twitter.com/',
+    github: 'https://github.com/arnav-panjla',
+  },
 ];
 
 const Team = () => {
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto p-4" style={{ maxWidth: '1000px' }}>
       <h1 className="text-3xl font-bold text-neonGreen mb-8 text-center">Our Team</h1>
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 ">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8">
         {teamMembers.map((member, index) => (
-          <div key={index} className="bg-white rounded-lg shadow-md p-4 text-center transform transition-transform hover:scale-105 cursor-pointer">
-            <img
-              src={member.avatar}
-              alt={member.name}
-              className="w-32 h-32 rounded-full mx-auto mb-4"
-            />
-            <h2 className="text-xl font-semibold text-gray-800">{member.name}</h2>
-            <p className="text-gray-600">{member.position}</p>
-            <div className="flex justify-center mt-4 space-x-4">
-            <a href={member.twitter} target="_blank" rel="noopener noreferrer">
+          <div key={index} className="flip-card ">
+            <div className="flip-card-inner relative bg-white rounded-xl shadow-2xl text-center cursor-pointer perspective w-full h-64">
+              <div className="flip-card-front absolute w-full h-full">
                 <img
-                  src={twitterIcon}
-                  alt="Twitter"
-                  className="w-6 h-6 filter grayscale hover:filter-none transform hover:scale-110 transition-transform duration-200"
+                  src={member.avatar}
+                  alt={member.name}
+                  className="w-32 h-32 rounded-full mx-auto mb-4"
                 />
-              </a>
-              <a href={member.github} target="_blank" rel="noopener noreferrer">
-                <img
-                  src={githubIcon}
-                  alt="GitHub"
-                  className="w-6 h-6 filter grayscale hover:filter-none transform hover:scale-110 transition-transform duration-200"
-                />
-              </a>
-              <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
-                <img
-                  src={linkedinIcon}
-                  alt="LinkedIn"
-                  className="w-6 h-6 filter grayscale hover:filter-none transform hover:scale-110 transition-transform duration-200"
-                />
-              </a>
+                <h2 className="text-xl font-semibold text-gray-800">{member.name}</h2>
+                <p className="text-gray-600">{member.position}</p>
+                
+              </div>
+              <div className="flip-card-back absolute w-full h-full bg-black text-neonBlue rounded-xl p-4">
+                <p className="text-md">{member.about}</p>
+                <div className="absolute bottom-4 left-12 align-center flex justify-center mt-4 space-x-4">
+                  <a href={member.twitter} target="_blank" rel="noopener noreferrer">
+                    <img
+                      src={twitterIcon}
+                      alt="Twitter"
+                      className="w-6 h-6 filter grayscale hover:filter-none transform hover:scale-110 transition-transform duration-200"
+                    />
+                  </a>
+                  <a href={member.github} target="_blank" rel="noopener noreferrer">
+                    <img
+                      src={githubIcon}
+                      alt="GitHub"
+                      className="w-6 h-6 filter grayscale hover:filter-none transform hover:scale-110 transition-transform duration-200"
+                    />
+                  </a>
+                  <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
+                    <img
+                      src={linkedinIcon}
+                      alt="LinkedIn"
+                      className="w-6 h-6 filter grayscale hover:filter-none transform hover:scale-110 transition-transform duration-200"
+                    />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         ))}
       </div>
+    
     </div>
   );
 };

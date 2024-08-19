@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'neonBlue': '#00bfff',
+        'neonBlue': '#04D9FF',
         'customBlue': '#20d0f6',
         'webBlue':'#03C8FD',
         'neonYellow':'#F2EA02',

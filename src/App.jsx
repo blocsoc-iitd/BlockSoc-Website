@@ -2,8 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Home from './pages/Home';  
-import Blogs from './pages/Blogs';
+import Home from './pages/Home';
 import Resources from './pages/Resources';
 import Team from './pages/Team';
 import Achievements from './pages/Achievements';
@@ -15,10 +14,9 @@ function App() {
     <Router>
       <div className="app-background flex flex-col min-h-screen bg-primary bg-custom-gradient">
         <Header />
-        <main className="flex-grow mx-auto p-4" style={{ maxWidth: '800px' }}>
+        <main className="flex-grow justify-center pt-[10vh]" style={{ maxWidth: '1500px' }}>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/blogs" element={<Blogs />} />
             <Route path="/resources" element={<Resources />} />
             <Route path="/team" element={<Team />} />
             <Route path="/achievements" element={<Achievements />} />

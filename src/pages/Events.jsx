@@ -26,7 +26,7 @@ const Events = () => {
   };
 
   return (
-    <div className="container mx-auto p-4 md:px-8 lg:px-8" style={{ maxWidth: '1200px' }}>
+    <div className="container mx-auto p-4 md:px-8 lg:px-8" style={{ maxWidth: '1000px' }}>
       <h1 className="text-3xl font-bold text-neonGreen mb-8">Events</h1>
       <div className="mb-12">
         <h2 className="text-2xl font-bold text-neonYellow mb-4">Upcoming Events</h2>

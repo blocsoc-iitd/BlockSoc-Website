@@ -36,50 +36,77 @@ const Achievements = () => {
   }, []);
 
   return (
-    <div className="relative min-h-screen py-8 text-white">
-      <h1 className="text-3xl font-bold text-neonGreen mb-4 text-center">Our Achievements</h1>
-      
-      {/* Central Dot and Line for Desktop */}
-      <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full z-20 hidden md:block"></div>
-      <div className="absolute mt-2 top-16 bottom-0 left-1/2 transform -translate-x-1/2 w-0.5 bg-white hidden md:block"></div>
+    <div className="relative mx-auto min-h-screen py-8 text-white " style={{ maxWidth: '1000px' }}>
+      <div>
+        <h1 className="text-4xl font-bold text-neonGreen mb-8 text-center">Our Achievements</h1>
 
-      {/* Central Dot and Line for Mobile */}
-      <div className="fixed top-1/2 left-1.5 transform -translate-y-1/2 w-6 h-6 bg-white rounded-full z-20 block md:hidden"></div>
-      <div className="absolute mt-2 top-16 bottom-0 left-0 transform w-0.5 bg-white block md:hidden"></div>
+        {/* LARGE&MEDIUM */}
+        <section className=''>
+          <div className="relative container mx-auto px-4 hidden md:block" style={{ maxWidth: '1500px' }}>
+            {/* Central Dot and Line for Desktop */}
+          <div className="fixed top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full z-20 hidden md:block"></div>
+          <div className="absolute mt-2 top-16 bottom-0 left-1/2 transform -translate-x-1/2 w-0.5 bg-white hidden md:block"></div>
+            <ul className="space-y-4">
+              {achievements.map((achievement, index) => (
+                <li
+                  key={index}
+                  className={`relative flex items-start achievement-item opacity-0 transition-transform duration-500 ease-in-out transform translate-y-64`}
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'flex-start',
+                    marginLeft: index % 2 === 0 ? 'auto' : '0',
+                    marginRight: index % 2 === 0 ? '0' : 'auto',
+                    position: 'relative',
+                    width: '100%',
+                  }}
+                >
+                  <div
+                    className={`p-4 bg-transparent rounded shadow-md ${
+                      index % 2 === 0 ? 'text-right' : 'text-left'
+                    }`}
+                    style={{
+                      marginLeft: index % 2 === 0 ? 'auto' : '0',
+                      marginRight: index % 2 === 0 ? '0' : 'auto',
+                      width: 'calc(50% - 10px)', // Ensures each item takes up half the container width minus some spacing
+                    }}
+                  >
+                    <h3 className="text-xl font-semibold text-neonYellow">{achievement.title}</h3>
+                    <p className="text-sm text-gray-400">{achievement.date}</p>
+                    <p className="mt-2 text-white">{achievement.description}</p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
 
-      {/* Achievements List */}
-      <div className="relative container mx-auto px-4" style={{ maxWidth: '1200px' }}>
-        <ul className="space-y-4">
-          {achievements.map((achievement, index) => (
-            <li
-              key={index}
-              className={`relative flex items-start achievement-item opacity-0 transition-transform duration-500 ease-in-out transform translate-y-64`}
-              style={{
-                display: 'flex',
-                justifyContent: 'flex-start',
-                marginLeft: index % 2 === 0 ? 'auto' : '0',
-                marginRight: index % 2 === 0 ? '0' : 'auto',
-                position: 'relative',
-                width: '100%',
-              }}
-            >
-              <div
-                className={`p-4 bg-transparent rounded shadow-md ${
-                  index % 2 === 0 ? 'text-right' : 'text-left'
-                }`}
+        {/* SMALL */}
+        <div className="relative container mx-auto px-4 md:hidden" style={{ maxWidth: '1500px' }}>
+          {/* Central Dot and Line for Mobile */}
+        <div className="fixed top-1/3 left-1.5 transform -translate-y-1/2 w-6 h-6 bg-white rounded-full z-20 block"></div>
+        <div className="absolute mt-2 top-16 bottom-0 left-4 transform w-0.5 bg-white block"></div>
+
+          <ul className="space-y-4">
+            {achievements.map((achievement, index) => (
+              <li
+                key={index}
+                className={`relative flex items-start achievement-item opacity-10 transition-transform duration-500 ease-in-out transform translate-y-64`}
                 style={{
-                  marginLeft: index % 2 === 0 ? 'auto' : '0',
-                  marginRight: index % 2 === 0 ? '0' : 'auto',
-                  width: 'calc(50% - 10px)', // Ensures each item takes up half the container width minus some spacing
+                  display: 'flex',
+                  justifyContent: 'flex-start',
+                  position: 'relative',
+                  width: '90%',
                 }}
               >
-                <h3 className="text-xl font-semibold text-neonYellow">{achievement.title}</h3>
-                <p className="text-sm text-gray-400">{achievement.date}</p>
-                <p className="mt-2 text-white">{achievement.description}</p>
-              </div>
-            </li>
-          ))}
-        </ul>
+                <div className='p-12 bg-transparent rounded shadow-md text-left'>
+                  <h3 className="text-xl font-semibold text-neonYellow">{achievement.title}</h3>
+                  <p className="text-sm text-gray-400">{achievement.date}</p>
+                  <p className="mt-2 text-white">{achievement.description}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );

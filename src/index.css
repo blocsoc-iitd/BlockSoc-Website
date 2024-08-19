@@ -23,22 +23,106 @@ code {
 header, footer {
   background: transparent;
 }
+header {
+  z-index: 20;
+}
 
-@keyframes fade-in-up {
-    0% {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+@keyframes lineFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
   }
-  
-  .animate-fade-in-up {
-    animation: fade-in-up 0.8s ease-out;
-  }
-  .achievement-item.visible {
+  to {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.animate-line-fade-in {
+  animation: lineFadeIn 1.5s ease-out forwards;
+}
+
+/* Optional: Delay each line's animation for a cascading effect */
+.animate-line-fade-in:nth-child(1) {
+  animation-delay: 0.3s;
+}
+.animate-line-fade-in:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.animate-line-fade-in:nth-child(3) {
+  animation-delay: 0.9s;
+}
+
+@media (max-width: 768px) {
+  .text-8xl {
+    font-size: 4rem; 
+  }
+  .text-4xl {
+    font-size: 2rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  .text-8xl {
+    font-size: 3rem; 
+  }
+  .text-4xl {
+    font-size: 1.5rem; 
+  }
+
+}
+
+
+.animate-fade-in-up {
+  animation: fade-in-up 3s ease-out;
+}
+
+.achievement-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.floating-logo {
+  animation: float 2.5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateX(-180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+
+/* Style the back side */
+.flip-card-back {
+  transform: rotateX(-180deg);
+}
+
+
