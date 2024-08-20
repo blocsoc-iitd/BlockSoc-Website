@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      width: {
+        '128': '36rem',
+      },
       colors: {
         'neonBlue': '#04D9FF',
         'customBlue': '#20d0f6',

@@ -30,7 +30,7 @@ const teamMembers = [
     linkedin: 'https://www.linkedin.com/',
     twitter: 'https://twitter.com/',
     github: 'https://github.com/manojkgorle',
-    about: 'Manoj assists is co-overall coordinatior'
+    about: 'Manoj ser is the co-overall coordinatior'
   },
   {
     name: 'Muskan Kumari',
@@ -103,6 +103,7 @@ const teamMembers = [
     linkedin: 'https://www.linkedin.com/',
     twitter: 'https://twitter.com/',
     github: 'https://github.com/arnav-panjla',
+    about:'I am batman '
   },
 ];
 
@@ -126,26 +127,26 @@ const Team = () => {
               </div>
               <div className="flip-card-back absolute w-full h-full bg-black text-neonBlue rounded-xl p-4">
                 <p className="text-md">{member.about}</p>
-                <div className="absolute bottom-4 left-12 align-center flex justify-center mt-4 space-x-4">
+                <div className="absolute bottom-4 flex fle-row space-x-4 justify-items-center mt-4 ">
                   <a href={member.twitter} target="_blank" rel="noopener noreferrer">
                     <img
                       src={twitterIcon}
                       alt="Twitter"
-                      className="w-6 h-6 filter grayscale hover:filter-none transform hover:scale-110 transition-transform duration-200"
+                      className="w-6 h-6 transform hover:scale-110 transition-transform duration-200"
                     />
                   </a>
                   <a href={member.github} target="_blank" rel="noopener noreferrer">
                     <img
                       src={githubIcon}
                       alt="GitHub"
-                      className="w-6 h-6 filter grayscale hover:filter-none transform hover:scale-110 transition-transform duration-200"
+                      className="w-6 h-6 transform hover:scale-110 transition-transform duration-200"
                     />
                   </a>
                   <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
                     <img
                       src={linkedinIcon}
                       alt="LinkedIn"
-                      className="w-6 h-6 filter grayscale hover:filter-none transform hover:scale-110 transition-transform duration-200"
+                      className="w-6 h-6 transform hover:scale-110 transition-transform duration-200"
                     />
                   </a>
                 </div>

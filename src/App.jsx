@@ -8,6 +8,13 @@ import Team from './pages/Team';
 import Achievements from './pages/Achievements';
 import Events from './pages/Events';
 import './index.css';
+import 'aos/dist/aos.css'; // import AOS styles
+import AOS from 'aos'; // import AOS library
+
+// Initialize AOS
+AOS.init({
+  duration: 2500, // Duration of animations
+});
 
 function App() {
   return (

@@ -17,7 +17,7 @@ const Header = () => {
           <img src={logo} alt="Blockchain Society Logo" className="w-[9vh] h-[9vh] rounded-lg" />
           <h1 className="text-2xl text-white font-bold">BlocSoc IITD</h1>
         </div>
-        <nav className="hidden md:flex space-x-4">
+        <nav className="hidden md:flex space-x-6 mr-4">
           <NavLink
             to="/"
             className={({ isActive }) => `text-xl ${isActive && 'font-semibold' } text-neonBlue text-xl hover:text-neonBlue transition-colors duration-200 relative group`}
