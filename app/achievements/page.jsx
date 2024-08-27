@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useEffect } from 'react';
 
 
@@ -16,7 +18,7 @@ const achievements = [
 const Achievements = () => {
 
   return (
-      <div className="relative mx-auto min-h-screen py-8 text-white " style={{ maxWidth: '1000px' }}>
+      <div className="relative mx-auto min-h-screen py-24 text-white " style={{ maxWidth: '1000px' }}>
         <div>
           <h1 className="text-4xl font-bold text-neonGreen mb-8 text-center">Our Achievements</h1>
 
@@ -31,6 +33,7 @@ const Achievements = () => {
                   <li
                     key={index}
                     data-aos="fade-up"
+                    data-aos-delay={index*400}
                     className={`relative flex items-start achievement-item opacity-0 transition-transform duration-500 ease-in-out transform translate-y-64`}
                     style={{
                       display: 'flex',

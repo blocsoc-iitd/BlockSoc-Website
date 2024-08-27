@@ -1,12 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './src/**/*.{js,jsx,ts,tsx}',
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       width: {
-        '128': '36rem',
+        '128': '38rem',
       },
       colors: {
         'neonBlue': '#04D9FF',
@@ -23,9 +25,12 @@ module.exports = {
         'underline': 'transform',
       },
       backgroundImage: {
-        'custom-gradient': 'radial-gradient(circle at top left, #164E35, transparent), radial-gradient(circle at middle right, #164E35, transparent), radial-gradient(circle at bottom left, #164E35, transparent)',
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+
     },
   },
   plugins: [],
-}
+};

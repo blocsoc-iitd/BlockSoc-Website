@@ -1,12 +1,12 @@
-import React from 'react';
-
+"use client"
 // Import images directly if using a bundler
-import upcoming1 from '../assets/upcoming1.jpg';
-import upcoming2 from '../assets/upcoming2.jpg';
-import past1 from '../assets/past1.jpg';
-import past2 from '../assets/past2.jpg';
-import past3 from '../assets/past3.jpg';
-import past4 from '../assets/past4.jpg';
+import Image from 'next/image';
+import upcoming1 from '@public/assets/upcoming1.jpg';
+import upcoming2 from '@public/assets/upcoming2.jpg';
+import past1 from '@public/assets/past1.jpg';
+import past2 from '@public/assets/past2.jpg';
+import past3 from '@public/assets/past3.jpg';
+import past4 from '@public/assets/past4.jpg';
 
 const upcomingEvents = [
   { date: 'August 2023', title: 'Upcoming Event 1', description: 'Description of upcoming event 1.', imageUrl: upcoming1 },
@@ -33,7 +33,7 @@ const Events = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
           {upcomingEvents.map((event, index) => (
             <div key={index} className="p-4 bg-white rounded shadow-md transform transition-transform hover:scale-105 cursor-pointer">
-              <img 
+              <Image 
                 src={event.imageUrl} 
                 alt={event.title} 
                 className="mb-4 w-full h-48 object-cover rounded" 
@@ -52,7 +52,7 @@ const Events = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {pastEvents.map((event, index) => (
             <div key={index} className="p-4 bg-white rounded shadow-md transform transition-transform hover:scale-105 cursor-pointer">
-              <img 
+              <Image 
                 src={event.imageUrl} 
                 alt={event.title} 
                 className="mb-4 w-full h-48 object-cover rounded filter grayscale" 

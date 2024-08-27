@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+
+
 import { NavLink } from 'react-router-dom';
 import { MdMenu, MdClose } from 'react-icons/md'; // Importing icons from react-icons/md
-import logo from '../assets/logoW.svg'; // Adjust the path as needed
+import logo from '@public/assets/logoW.svg'; // Adjust the path as needed
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -61,15 +62,15 @@ const Header = () => {
         </div>
       </div>
       {isMobileMenuOpen && (
-        <div className="md:hidden rounded flex flex-col items-center bg-white bg-opacity-10 w-full py-[2vh] absolute top-[10vh] left-0">
-          <NavLink
+        <div className="md:hidden rounded flex flex-col items-center bg-white w-full py-[2vh] absolute top-[10vh] left-0">
+          <Link
             to="/"
             className="text-xl text-white relative hover:text-neonBlue transition-colors duration-200"
             onClick={toggleMobileMenu}
           >
             Home
             <div className="absolute left-0 bottom-[-2px] w-full h-[2px] bg-neonBlue transform scale-x-0 hover:scale-x-100 transition-transform duration-300"></div>
-          </NavLink>
+          </Link>
           <NavLink
             to="/achievements"
             className="text-xl text-white relative hover:text-neonBlue transition-colors duration-200"

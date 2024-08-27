@@ -1,17 +1,18 @@
-import React from 'react';
-import member1 from '../assets/member1.jpg';
-import member2 from '../assets/member2.jpg';
-import member3 from '../assets/member3.jpg';
-import member4 from '../assets/member4.jpg';
-import member5 from '../assets/member5.jpg';
-import member6 from '../assets/member6.jpg';
-import member7 from '../assets/member7.jpg';
-import member8 from '../assets/member8.jpg';
-import member9 from '../assets/member9.jpg';
-import member10 from '../assets/member10.jpg';
-import linkedinIcon from '../assets/linkedin.svg';
-import twitterIcon from '../assets/twitter.svg';
-import githubIcon from '../assets/github.svg';
+import Image from 'next/image';
+
+import member1 from '@public/assets/member1.jpg';
+import member2 from '@public/assets/member2.jpg';
+import member3 from '@public/assets/member3.jpg';
+import member4 from '@public/assets/member4.jpg';
+import member5 from '@public/assets/member5.jpg';
+import member6 from '@public/assets/member6.jpg';
+import member7 from '@public/assets/member7.jpg';
+import member8 from '@public/assets/member8.jpg';
+import member9 from '@public/assets/member9.jpg';
+import member10 from '@public/assets/member10.jpg';
+import linkedinIcon from '@public/assets/linkedin.svg';
+import twitterIcon from '@public/assets/twitter.svg';
+import githubIcon from '@public/assets/github.svg';
 
 const teamMembers = [
   {
@@ -116,7 +117,7 @@ const Team = () => {
           <div key={index} className="flip-card ">
             <div className="flip-card-inner relative bg-white rounded-xl shadow-2xl text-center cursor-pointer perspective w-full h-64">
               <div className="flip-card-front absolute w-full h-full">
-                <img
+                <Image
                   src={member.avatar}
                   alt={member.name}
                   className="w-32 h-32 rounded-full mx-auto mb-4"
@@ -129,21 +130,21 @@ const Team = () => {
                 <p className="text-md">{member.about}</p>
                 <div className="absolute bottom-4 flex fle-row space-x-4 justify-items-center mt-4 ">
                   <a href={member.twitter} target="_blank" rel="noopener noreferrer">
-                    <img
+                    <Image
                       src={twitterIcon}
                       alt="Twitter"
                       className="w-6 h-6 transform hover:scale-110 transition-transform duration-200"
                     />
                   </a>
                   <a href={member.github} target="_blank" rel="noopener noreferrer">
-                    <img
+                    <Image
                       src={githubIcon}
                       alt="GitHub"
                       className="w-6 h-6 transform hover:scale-110 transition-transform duration-200"
                     />
                   </a>
                   <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
-                    <img
+                    <Image
                       src={linkedinIcon}
                       alt="LinkedIn"
                       className="w-6 h-6 transform hover:scale-110 transition-transform duration-200"
