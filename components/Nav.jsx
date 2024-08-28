@@ -26,45 +26,50 @@ const Nav = () => {
     };
   
     return (
-        <div className="z-30">
+        <div className="z-30 w-screen">
             <header className="fixed top-0 left-1/2 transform -translate-x-1/2 w-screen bg-black">
                 <div className="container flex justify-between items-center h-full my-2">
                 <div className="flex items-center space-x-8">
-                    <Image src={logo} alt="Blockchain Society Logo" className="w-[7vh] h-[7vh] ml-4" />
-                    <h1 className="text-white text-3xl font-bold">BlocSoc IITD</h1>
+                    <Link
+                    href="/"
+                    className="text-xl ml-6 text-white relative hover:text-neonBlue  transition-all duration-200"
+                    >
+                    <Image src={logo} alt="Blockchain Society Logo" className="w-[7vh] h-[7vh] ml-4 md:ml-12 " />
+                    </Link>
+                    <h1 className="text-white font-bold text-6xl md:text-3xl">BlocSoc IITD</h1>
                 </div>
                 <nav className="hidden md:flex space-x-4 text-white text-xl ">
                     <Link
                     href="/"
-                    className="text-2xl ml-6 text-white relative hover:text-neonBlue  transition-all duration-200"
+                    className="text-xl ml-6 text-white relative hover:text-neonBlue  transition-all duration-200"
                     >
                     Home
                     <div className="absolute left-0 bottom-[-2px] w-full h-[2px] bg-neonBlue transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
                     </Link>
                     <Link
                     href="/achievements"
-                    className="text-2xl ml-6 text-white relative hover:text-neonBlue  transition-all duration-200"
+                    className="text-xl ml-6 text-white relative hover:text-neonBlue  transition-all duration-00"
                     >
                     Achievements
                     <div className="absolute left-0 bottom-[-2px] w-full h-[2px] bg-neonBlue transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
                     </Link>
                     <Link
                     href="/events"
-                    className="text-2xl ml-6 text-white relative hover:text-neonBlue  transition-all duration-200"
+                    className="text-xl ml-6 text-white relative hover:text-neonBlue  transition-all duration-200"
                     >
                     Events
                     <div className="absolute left-0 bottom-[-2px] w-full h-[2px] bg-neonBlue transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
                     </Link>
                     <Link
                     href="/resources"
-                    className="text-2xl ml-6 text-white relative hover:text-neonBlue  transition-all duration-200"
+                    className="text-xl ml-6 text-white relative hover:text-neonBlue  transition-all duration-200"
                     >
                     Resources
                     <div className="absolute left-0 bottom-[-2px] w-full h-[2px] bg-neonBlue transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
                     </Link>
                     <Link
                     href="/team"
-                    className="text-2xl ml-6 text-white relative hover:text-neonBlue transition-all duration-200"
+                    className="text-xl ml-6 text-white relative hover:text-neonBlue transition-all duration-200"
                     >
                     Team
                     <div className="absolute left-0 bottom-[-2px] w-full h-[2px] bg-neonBlue transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>

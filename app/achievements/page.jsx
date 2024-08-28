@@ -9,10 +9,6 @@ const achievements = [
   { date: 'December 2023', title: 'EthIndia 2023', description: 'An international hackathon organized by the Ethereum Foundation in Bengaluru during December 2023. This prestigious event attracted global talent and offered our students a chance to compete at the highest level. Seven students from our college participated, showcasing innovative projects and competing for various prizes.' },
   { date: 'October 2023', title: 'Unfold 2023', description: 'This hackathon provided an excellent opportunity for freshers to gain exposure to the Web3 ecosystem. Two of our second-year students participated, gaining valuable experience in blockchain development and networking with industry professionals' },
   { date: 'February 2023', title: 'Achievement 1', description: 'Description of achievement 1.' },
-  { date: 'January 2023', title: 'Achievement 2', description: 'Description of achievement 2.' },
-  { date: 'December 2022', title: 'Achievement 3', description: 'Description of achievement 3.' },
-  { date: 'November 2022', title: 'Achievement 4', description: 'Description of achievement 4.' },
-  { date: 'October 2022', title: 'Achievement 5', description: 'Description of achievement 5.' },
 ];
 
 const Achievements = () => {

@@ -14,6 +14,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 
+import AnimatedText from '@components/AnimatedText';
+
 
 const Home = () => {
 
@@ -26,9 +28,9 @@ const Home = () => {
 
         
   return (
-    <div>
+    <div className='w-screen overflow-x-hidden'>
       {/* First Part: Background Video and Welcome Text */}
-      <section className="w-[100vw] h-[100vh] relative overflow-hidden">
+      <section className="w-screen h-[100vh] relative overflow-hidden">
       <div >
             <video 
             src={require('../public/assets/backgroundDark.mp4')}
@@ -66,18 +68,16 @@ const Home = () => {
                         Our mission
                     </div>
                     <div className='text-xl'>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti laborum saepe praesentium vel nisi deserunt, laudantium ipsum libero sunt, accusantium ab veritatis aliquam, sit exercitationem possimus aspernatur iusto id. Asperiores.
-                    </div>
+                    Our mission is to foster a deep understanding of blockchain technology and its applications. We aim to provide resources, organize events, and create opportunities for hands-on experience to empower our members to become leaders in the blockchain revolution.                    </div>
                 </div>
             </div>
             <div className=' flex wrap align-center justify-center w-screen mb-16 text-white '>
                 <div className='w-auto' data-aos="fade-left" data-aos-delay="500">
                     <div className='text-5xl mb-2 text-bold'>
-                        Who are we ?
+                        Get Involved
                     </div>
                     <div className='text-xl'>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti laborum saepe praesentium vel nisi deserunt, laudantium ipsum libero sunt, accusantium ab veritatis aliquam, sit exercitationem possimus aspernatur iusto id. Asperiores.
-                    </div>
+                    We are always open to collaborations. Whether you are a beginner or an expert, there is a place for you in our community. Join us to learn, collaborate, and contribute to the future of blockchain technology                    </div>
                 </div>
             </div>
         </div>
@@ -122,13 +122,14 @@ const Home = () => {
             <div className="border-2 border-neonBlue rounded-3xl flex items-center justify-center overflow-hidden bg-cover bg-center" 
             data-aos="fade-left" data-aos-delay="200"
             style={{ width: '48vw', height: '50vh' }}>
-              <p className="text-white m-4 text-xl text-center ">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque perspiciatis possimus consequatur tempora dolores ex suscipit magnam, quisquam eum saepe itaque error beatae qui, sed provident numquam, labore officiis facilis.
-                </p>
+              <div className="text-white m-4 mx-8 text-2xl text-center ">
+              <AnimatedText quote = "A team of innovative minds, building a network of composable solutions, stronger together in every block." />
+              </div>
             </div>
           </div>
 
           <div className="flex w-full h-full">
+            
             {/* Second row */}
             <div className='flex flex-col'>
               <div className='flex'>
@@ -138,13 +139,13 @@ const Home = () => {
                   <Image src={BTP} alt="BTP" className="w-full h-full object-cover" />
                 </div>
                 <div className="border-2 border-neonBlue rounded-3xl flex items-center justify-center overflow-hidden bg-cover bg-center" 
-                data-aos="slide-up" data-aos-delay="150"
+                data-aos="fade-up" data-aos-delay="150"
                 style={{ width: '12vw', height: '25vh'}}>
                   <Image src={image7} alt="Block-10" className="w-full h-full object-cover" />
                 </div>
               </div>
               <div className="border-2 border-neonBlue rounded-3xl flex items-center justify-center overflow-hidden bg-cover bg-center" 
-              data-aos="slide-left" data-aos-delay="150"
+              data-aos="slide-right" data-aos-delay="150"
               style={{ width: '57vw', height: '50vh' }}>
               <p className="text-white m-4 text-2xl text-center ">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque perspiciatis possimus consequatur tempora dolores ex suscipit magnam, quisquam eum saepe itaque error beatae qui, sed provident numquam, labore officiis facilis.
@@ -154,7 +155,7 @@ const Home = () => {
             <div className='flex flex-col'>
               <div className="flex">
                 <div className="border-2 border-neonBlue rounded-3xl flex items-center justify-center overflow-hidden bg-cover bg-center" 
-                data-aos="slide-right" data-aos-delay="200"
+                data-aos="fade-left" data-aos-delay="200"
                 style={{ width: '39vw', height: '50vh'}}>
                   <Image src={image2} alt="Block-9" className="w-full h-full object-cover" />
                 </div>
