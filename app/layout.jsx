@@ -6,8 +6,8 @@ import Nav from "@components/Nav"
 
 
 export const metadata = {
-    title: "BlocSoc Website",
-    description: "Don't trust, verify"
+    title: "BlocSoc IITD",
+    description: "Blockchain Society, Indian Institute of Technology Delhi"
 }
 
 const RootLayout = ({ children }) => {
