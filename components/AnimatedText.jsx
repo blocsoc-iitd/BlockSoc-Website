@@ -12,11 +12,11 @@ const AnimatedText = ({ quote }) => {
     }, []);
 
   return (
-    <div className="text-center text-white font-bold text-lg">
+    <div className="text-center text-white font-bold">
       {quote.split(" ").map((word, index) => (
         <span
           key={index}
-          className='inline-block text-4xl' 
+          className='inline-block' 
           data-aos="fade-up" 
           data-aos-delay={index*200}
         >

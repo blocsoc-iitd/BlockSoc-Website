@@ -29,16 +29,16 @@ const Nav = () => {
         <div className="z-30 w-screen">
             <header className="fixed top-0 left-1/2 transform -translate-x-1/2 w-screen bg-black">
                 <div className="container flex justify-between items-center h-full my-2">
-                <div className="flex items-center space-x-8">
+                <div className="flex items-center sm:space-x-8 ">
                     <Link
                     href="/"
                     className="text-xl ml-6 text-white relative hover:text-neonBlue  transition-all duration-200"
                     >
                     <Image src={logo} alt="Blockchain Society Logo" className="w-[7vh] h-[7vh] ml-4 md:ml-12 " />
                     </Link>
-                    <h1 className="text-white font-bold text-6xl md:text-3xl">BlocSoc IITD</h1>
+                    <h1 className="text-white font-bold ml-2 text-5xl md:text-3xl">BlocSoc IITD</h1>
                 </div>
-                <nav className="hidden md:flex space-x-4 text-white text-xl ">
+                <nav className="hidden md:flex space-x-4 text-white text-xl mr-8">
                     <Link
                     href="/"
                     className="text-xl ml-6 text-white relative hover:text-neonBlue  transition-all duration-200"

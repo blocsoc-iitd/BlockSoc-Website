@@ -48,36 +48,51 @@ const Home = () => {
       </section>
 
 
-      {/* Second section with some animations ;D*/}
+      {/* -----------------------------Second section-----------------------------  ;D*/}
+      {/* -----------------------------Second section-----------------------------  ;D*/}
+      {/* -----------------------------Second section-----------------------------  ;D*/}
+      {/* -----------------------------Second section-----------------------------  ;D*/}
+      {/* -----------------------------Second section-----------------------------  ;D*/}
 
       <section className='w-screen  flex flex-col items-center justufy-center'> 
-        <div className=' flex align-center justify-center w-screen mb-16 text-white '>
+        <div className=' flex align-center justify-center w-screen text-white md:mb-16'>
             <div className='w-[80vw]' data-aos="fade-up">
                 <div className='text-5xl mb-2 text-bold'>
                     Who are we ?
                 </div>
-                <div className='text-xl mb-16'>
+                <div className='md:hidden text-xl mb-16'>
+                We are a passionate collective of students at IIT Delhi, dedicated to exploring and advancing the frontier of blockchain technology.
+                </div>
+                <div className='hidden md:block text-xl mb-16'>
                 We are a passionate collective of students at IIT Delhi, dedicated to exploring and advancing the frontier of blockchain technology. Our society serves as a hub for learning and collaboration where we dive deep into the decentralized world, build projects, and foster a community that’s at the cutting edge of blockchain and Web3 development.
                 </div>
             </div>
         </div>
-        <div className='w-[80vw] flex wrap items-start justify-start mb-32'>
-            <div className=' flex wrap  w-screen mx-4 mb-16 text-white '>
+        <div className='w-[80vw] flex wrap flex-col mb-8 md:flex-row items-start justify-start space-x-4 md:mb-32 '>
+            <div className=' flex wrap  w-auto  mb-16 text-white '>
                 <div className='w-auto' data-aos="fade-right" data-aos-delay="300">
                     <div className='text-5xl mb-2 text-bold'>
                         Our mission
                     </div>
-                    <div className='text-xl'>
-                    Our mission is to foster a deep understanding of blockchain technology and its applications. We aim to provide resources, organize events, and create opportunities for hands-on experience to empower our members to become leaders in the blockchain revolution.                    </div>
+                    <div className='md:hidden text-xl'>
+                    Our mission is to foster a deep understanding of blockchain technology and its applications. We aim to provide resources and organize events to empower our members.                    
+                    </div>
+                    <div className='hidden md:block text-xl'>
+                    Our mission is to foster a deep understanding of blockchain technology and its applications. We aim to provide resources, organize events, and create opportunities for hands-on experience to empower our members to become leaders in the blockchain revolution.
+                    </div>
                 </div>
             </div>
-            <div className=' flex wrap align-center justify-center w-screen mb-16 text-white '>
+            <div className=' flex wrap align-center justify-center w-auto mb-16 text-white '>
                 <div className='w-auto' data-aos="fade-left" data-aos-delay="500">
                     <div className='text-5xl mb-2 text-bold'>
                         Get Involved
                     </div>
-                    <div className='text-xl'>
-                    We are always open to collaborations. Whether you are a beginner or an expert, there is a place for you in our community. Join us to learn, collaborate, and contribute to the future of blockchain technology                    </div>
+                    <div className='md:hidden text-xl'>
+                    We are always open to collaborations. Whether you are a beginner or an expert, there is a place for you in our community.                   
+                    </div>
+                    <div className='hidden md:block text-xl'>
+                    We are always open to collaborations. Whether you are a beginner or an expert, there is a place for you in our community. Join us to learn, collaborate, and contribute to the future of blockchain technology.
+                    </div>
                 </div>
             </div>
         </div>
@@ -122,7 +137,7 @@ const Home = () => {
             <div className="border-2 border-neonBlue rounded-3xl flex items-center justify-center overflow-hidden bg-cover bg-center" 
             data-aos="fade-left" data-aos-delay="200"
             style={{ width: '48vw', height: '50vh' }}>
-              <div className="text-white m-4 mx-8 text-2xl text-center ">
+              <div className="text-white m-4 mx-8 text-4xl text-center ">
               <AnimatedText quote = "A team of innovative minds, building a network of composable solutions, stronger together in every block." />
               </div>
             </div>
@@ -188,9 +203,9 @@ const Home = () => {
             <div className="border-2 border-neonBlue rounded-3xl flex items-center justify-center overflow-hidden bg-cover bg-center" 
             data-aos="fade-up" data-aos-delay="100"
             style={{ width: '95vw', height: '50vw'}}>
-              <p className="text-white m-4 text-xl text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque perspiciatis possimus consequatur tempora dolores ex suscipit magnam, quisquam eum saepe itaque error beatae qui, sed provident numquam, labore officiis facilis.
-                </p>
+              <div className="text-white m-4 mx-8 text-4xl text-center ">
+              <AnimatedText quote = "A team of innovative minds, building a network of composable solutions, stronger together in every block." />
+              </div>
             </div>
           </div>
           <div className="flex flex-wrap w-full h-full">
@@ -251,12 +266,14 @@ const Home = () => {
               </div>
             </div>
             <div className="border-2 border-neonBlue rounded-3xl flex items-center justify-center overflow-hidden bg-cover bg-center" 
-            data-aos="zoom-in" data-aos-delay="150"
+            data-aos="fade-up" data-aos-delay="150"
             style={{ width: '95vw', height: '50vw'}}>
               <Image src={image2} alt="Block-9" className="w-full h-full object-cover" />
             </div>
-            <div className="border-2 border-neonBlue rounded-3xl flex items-center justify-center overflow-hidden bg-cover bg-center" style={{ width: '95vw', height: '50vw'}}>
-              <p className="text-white m-4 text-xl text-center" data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque perspiciatis possimus consequatur tempora dolores ex suscipit magnam, quisquam eum saepe itaque error beatae qui, sed provident numquam, labore officiis facilis.</p>
+            <div className="border-2 border-neonBlue rounded-3xl flex items-center justify-center overflow-hidden bg-cover bg-center" 
+            data-aos="fade-up" data-aos-delay="150"
+            style={{ width: '95vw', height: '50vw'}}>
+              <p className="text-white m-4 text-xl text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque perspiciatis possimus consequatur tempora dolores ex suscipit magnam, quisquam eum saepe itaque error beatae qui, sed provident numquam, labore officiis facilis.</p>
             </div>
             
           </div>

@@ -71,6 +71,7 @@ const Achievements = () => {
                 <li
                   key={index}
                   data-aos="fade-up"
+                  data-aos-delay={index*400}
                   className={`relative flex items-start achievement-item opacity-10 transition-transform duration-500 ease-in-out transform translate-y-64`}
                   style={{
                     display: 'flex',
