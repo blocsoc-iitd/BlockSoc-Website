@@ -3,11 +3,9 @@ import '@styles/globals.css';
 import Footer from "@components/Footer"
 import Nav from "@components/Nav"
 
-
-
 export const metadata = {
-    title: "BlocSoc IITD",
-    description: "Blockchain Society, Indian Institute of Technology Delhi"
+  title: "BlocSoc IITD",
+  description: "Blockchain Society, Indian Institute of Technology Delhi"
 }
 
 const RootLayout = ({ children }) => {

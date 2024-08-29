@@ -13,28 +13,34 @@ const socialLinks = [
 
 const Footer = () => {
   return (
-    <footer className="bg-transparent text-white py-4">
-      <div className="container flex justify-between items-center mx-auto px-4 mb-4 max-w-screen-md">
-        <p className=" text-xl text-gray-800 font-bold" >© 2024 Blockchain Society, IIT Delhi</p>
-        <div className="flex space-x-6">
+    <footer className="text-white pb-4 flex flex-col justify-between items-center">
+      <div className="w-screen flex justify-between items-center py-6 px-4 md:px-20 
+      bg-gradient-to-r from-black via-black to-black
+      ">
+        <p className="text-xl text-white font-bold">© 2024 Blockchain Society, IIT Delhi</p>
+        <div className="flex space-x-4 mt-4 md:space-x-12">
           {socialLinks.map((link) => (
-            <a 
+            <a
               key={link.alt}
-              href={link.href} 
+              href={link.href}
               className="transition-transform transition-opacity duration-300"
-              target="_blank" 
+              target="_blank"
               rel="noopener noreferrer"
             >
-              <Image c
-                src={link.src} 
-                alt={link.alt} 
-                className="w-8 h-8 text-gray-400 hover:text-gray-300 hover:opacity-80 hover:scale-110"
+              <Image
+                src={link.src}
+                alt={link.alt}
+                className="w-9 h-9 text-gray-400 hover:text-gray-300 hover:opacity-90 hover:scale-110"
               />
             </a>
           ))}
         </div>
       </div>
+      <div className=" text-white mt-4 text-center text-sm md:text-lg">
+        Developed by Students of Blockchain Society, IITD.
+      </div>
     </footer>
+
   );
 };
 

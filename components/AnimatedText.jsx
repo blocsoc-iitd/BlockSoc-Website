@@ -7,7 +7,7 @@ const AnimatedText = ({ quote }) => {
   useEffect (() => {
     AOS.init({
         duration: 1000, // You can customize the duration here
-        once: false, // Whether animation should happen only once - while scrolling down
+        once: false,
       });
     }, []);
 

@@ -18,6 +18,7 @@ module.exports = {
         'neonRed':'#FF3131',
         'neonGreen':'#39FF14',
         'neonPurple':'#B026FF',
+        'bgGreen':'#3ea588',
          primary: '#171932',
          accent: '#164E35',
       },

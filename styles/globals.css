@@ -16,7 +16,7 @@ code {
 }
 
 .app-background {
-  background: linear-gradient(to bottom,#000000,#000000, #202244, #3ea588);
+  background: linear-gradient(to bottom,#000000,#000000, #202244,#885cc5);
   min-height: 100vh;
 }
 
@@ -63,6 +63,9 @@ header {
 }
 
 @media (max-width: 768px) { /* half than the actual ammount*/
+  .w-128 {
+    width:19rem;
+  }
   .text-9xl {
     font-size: 4rem; 
   }
