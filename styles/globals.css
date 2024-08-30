@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .paused {
+    animation-play-state: paused;
+  }
+}
+
 /* index.css */
 body {
   margin: 0;
@@ -64,7 +70,7 @@ header {
 
 @media (max-width: 768px) { /* half than the actual ammount*/
   .w-128 {
-    width:19rem;
+    width:20rem;
   }
   .text-9xl {
     font-size: 4rem; 
@@ -197,7 +203,7 @@ header {
   -webkit-text-stroke: 0vw #383d52;
   border-right: 2px solid #01fe87;
   overflow: hidden;
-  animation: animate 7s linear infinite;
+  animation: animate 5s linear infinite;
 }
 
 @keyframes animate {

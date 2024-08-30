@@ -15,6 +15,7 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 
 import AnimatedText from '@components/AnimatedText';
+import InfiniteScroll from '@components/InfiniteScroll';
 
 
 const Home = () => {
@@ -34,19 +35,18 @@ const Home = () => {
       <div >
             <video 
             src={require('../public/assets/backgroundDark.mp4')}
-            className="absolute inset-0 w-[98vw] h-full object-cover"
+            className="absolute inset-0 w-[98vw] object-cover h-[75vh] md:h-screen"
             autoPlay
             loop
             muted
             />
         </div>
         <div className="absolute inset-0 flex flex-col pt-[25vh] text-white z-10 space-y-4 ml-8">
-          <h1 className="text-8xl text-left font-bold animate-line-fade-in">Welcome to</h1>
-          <h2 className="text-8xl text-left font-bold mb-2 " data-aos="fade-up">Blockchain Society</h2>
-          <span className="text-4xl text-left w-128 scrollReveal" data-text="Indian_Institute_of_Technology,Delhi" >Indian_Institute_of_Technology,Delhi</span>
+          <h1 className="text-8xl text-left font-bold " data-aos="fade-up">Welcome to</h1>
+          <h2 className="text-8xl text-left font-bold mb-2 " data-aos="fade-up" data-aos-delay='100'>Blockchain Society</h2>
+          <span className="text-4xl text-left w-128 font-bold scrollReveal" data-text="Indian_Institute_of_Technology,Delhi" >Indian_Institute_of_Technology,Delhi</span>
         </div>
       </section>
-
 
       {/* -----------------------------Second section-----------------------------  ;D*/}
       {/* -----------------------------Second section-----------------------------  ;D*/}
@@ -117,25 +117,25 @@ const Home = () => {
             {/* First row */}
             <div className="border-2 border-neonBlue rounded-3xl flex items-center justify-center overflow-hidden bg-cover bg-center" 
             style={{ width: '36vw', height: '50vh'}}
-            data-aos="fade-right" data-aos-delay="200"
+            data-aos="fade-right" data-aos-delay="100"
             >
               <Image src={image1} alt="Block-5" className="w-full h-full object-cover" />
             </div>
             <div className="flex flex-col" style={{ width: '12vw' }}>
               <div className="border-2 border-neonBlue bg-white rounded-3xl flex items-center justify-center overflow-hidden bg-cover bg-center" 
-              data-aos="fade-up" data-aos-delay="350"
+              data-aos="fade-up" data-aos-delay="200"
               style={{ width: '12vw', height: '25vh'}}>
                 <Image src={logo} alt="Logo" className="floating-logo w-[12vh] h-[12vh]" />
               </div>
               <div className="border-2 border-neonBlue bg-white rounded-3xl flex items-center justify-center overflow-hidden bg-cover bg-center" 
-              data-aos="fade-up" data-aos-delay="200"
+              data-aos="fade-up" data-aos-delay="150"
               style={{width: '12vw', height: '25vh'}}>
                 <Image src={image5} alt="Logo" className="floating-logo w-[10vw] h-[10vw]" />
               </div>
             </div>
             
             <div className="border-2 border-neonBlue rounded-3xl flex items-center justify-center overflow-hidden bg-cover bg-center" 
-            data-aos="fade-left" data-aos-delay="200"
+            data-aos="fade-left" data-aos-delay="150"
             style={{ width: '48vw', height: '50vh' }}>
               <div className="text-white m-4 mx-8 text-4xl text-center ">
               <AnimatedText quote = "A team of innovative minds, building a network of composable solutions, stronger together in every block." />
@@ -148,29 +148,29 @@ const Home = () => {
             {/* Second row */}
             <div className='flex flex-col'>
               <div className='flex'>
-                <div className="border-2 border-neonBlue rounded-3xl flex items-center justify-center overflow-hidden bg-cover bg-center" 
+                <div className="border-2 border-neonBlue rounded-3xl flex items-center justify-center overflow-hidden bg-cover bg-center
+                bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500" 
                 data-aos="zoom-in" data-aos-delay="100"
                 style={{ width: '45vw', height: '25vh'}}>
-                  <Image src={BTP} alt="BTP" className="w-full h-full object-cover" />
+                  <span className='text-6xl text-center font-bold text-white'>Don't Trust, Verify</span>
                 </div>
                 <div className="border-2 border-neonBlue rounded-3xl flex items-center justify-center overflow-hidden bg-cover bg-center" 
-                data-aos="fade-up" data-aos-delay="150"
+                data-aos="fade-up" data-aos-delay="100"
                 style={{ width: '12vw', height: '25vh'}}>
                   <Image src={image7} alt="Block-10" className="w-full h-full object-cover" />
                 </div>
               </div>
               <div className="border-2 border-neonBlue rounded-3xl flex items-center justify-center overflow-hidden bg-cover bg-center" 
-              data-aos="slide-right" data-aos-delay="150"
+              data-aos="slide-right" data-aos-delay="100"
               style={{ width: '57vw', height: '50vh' }}>
               <p className="text-white m-4 text-2xl text-center ">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque perspiciatis possimus consequatur tempora dolores ex suscipit magnam, quisquam eum saepe itaque error beatae qui, sed provident numquam, labore officiis facilis.
-              </p>
+                At the Blockchain Society, we are dedicated to exploring and advancing the world of blockchain technology. Our community consists of enthusiasts, developers, and researchers who are passionate about crypto, DeFi, Web3.0, and ZK proofs. We believe in the transformative power of blockchain and its potential to revolutionize various industries              </p>
               </div>
             </div>
             <div className='flex flex-col'>
               <div className="flex">
                 <div className="border-2 border-neonBlue rounded-3xl flex items-center justify-center overflow-hidden bg-cover bg-center" 
-                data-aos="fade-left" data-aos-delay="200"
+                data-aos="fade-left" data-aos-delay="100"
                 style={{ width: '39vw', height: '50vh'}}>
                   <Image src={image2} alt="Block-9" className="w-full h-full object-cover" />
                 </div>
@@ -178,9 +178,7 @@ const Home = () => {
               <div className="border-2 border-neonBlue rounded-3xl flex items-center justify-center overflow-hidden bg-cover bg-center" 
               data-aos="slide-up" data-aos-delay="10"
               style={{ width: '39vw', height: '25vh' }}>
-              <p className="text-white m-4 text-md text-center" >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque perspiciatis possimus consequatur tempora dolores ex suscipit magnam, quisquam eum saepe itaque error beatae qui, sed provident numquam, labore officiis facilis.
-              </p>
+                <Image src={BTP} alt="BTP" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>
@@ -202,7 +200,7 @@ const Home = () => {
             {/* First row */}
             <div className="border-2 border-neonBlue rounded-3xl flex items-center justify-center overflow-hidden bg-cover bg-center" 
             data-aos="fade-up" data-aos-delay="100"
-            style={{ width: '95vw', height: '50vw'}}>
+            style={{ width: '95vw'}}>
               <div className="text-white m-4 mx-8 text-4xl text-center ">
               <AnimatedText quote = "A team of innovative minds, building a network of composable solutions, stronger together in every block." />
               </div>
@@ -215,10 +213,11 @@ const Home = () => {
             style={{width: '20vw', height: '20vw'}}>
               <Image src={logo} alt="Logo" className="floating-logo w-[10vw] h-[10vw]" />
             </div>
-            <div className="border-2 border-neonBlue rounded-3xl flex items-center justify-center overflow-hidden bg-cover bg-center" 
+            <div className="border-2 border-neonBlue rounded-3xl flex items-center justify-center overflow-hidden bg-cover bg-center
+            bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500" 
             data-aos="zoom-in" data-aos-delay="200"
             style={{ width: '55vw', height: '20vw'}}>
-              <Image src={BTP} alt="Believe" className="w-full h-full object-cover"/>
+              <span className=' text-center font-bold text-white text-6xl md:text-7xl'>Don't Trust, Verify</span>
             </div>
             <div className="border-2 border-neonBlue bg-white rounded-3xl flex items-center justify-center overflow-hidden bg-cover bg-center" 
             data-aos="slide-left" data-aos-delay="100"
@@ -272,8 +271,10 @@ const Home = () => {
             </div>
             <div className="border-2 border-neonBlue rounded-3xl flex items-center justify-center overflow-hidden bg-cover bg-center" 
             data-aos="fade-up" data-aos-delay="150"
-            style={{ width: '95vw', height: '50vw'}}>
-              <p className="text-white m-4 text-xl text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque perspiciatis possimus consequatur tempora dolores ex suscipit magnam, quisquam eum saepe itaque error beatae qui, sed provident numquam, labore officiis facilis.</p>
+            style={{ width: '95vw'}}>
+              <p className="text-white m-4 text-xl text-center">
+                At the Blockchain Society, we are dedicated to exploring and advancing the world of blockchain technology. Our community consists of enthusiasts, developers, and researchers who are passionate about crypto, DeFi, Web3.0, and ZK proofs. We believe in the transformative power of blockchain and its potential to revolutionize various industries
+              </p>
             </div>
             
           </div>
@@ -282,7 +283,7 @@ const Home = () => {
 
       {/* Third Part: To be added later */}
       <section className="w-screen h-48 bg-transparent flex items-center justify-center">
-        <p className="text-white">Content for the third part will be added here.</p>
+        <p className="text-white">If needed, content for the third part will be added here.</p>
       </section>
     </div>
   );

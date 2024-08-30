@@ -7,8 +7,18 @@ module.exports = {
   ],
   theme: {
     extend: {
+      
+      animation: {
+        'infinite-scroll': 'infinite-scroll 25s linear infinite',
+      },
+      keyframes: {
+        'infinite-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        }
+      },  
       width: {
-        '128': '38rem',
+        '128': '39rem',
       },
       colors: {
         'neonBlue': '#04D9FF',
