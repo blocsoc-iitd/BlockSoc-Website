@@ -33,7 +33,7 @@ const Home = () => {
   return (
     <div className='w-screen overflow-x-hidden'>
       {/* First Part: Background Video and Welcome Text */}
-      <section className="w-screen h-[70vh] md:h-[110vh] relative overflow-hidden">
+      <section className="w-screen h-[70vh] md:h-[100vh] relative overflow-hidden">
         <div className="absolute inset-0 z-10"
         data-aos="fade-up" 
         data-aos-delay='600'>
