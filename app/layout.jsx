@@ -13,7 +13,7 @@ const RootLayout = ({ children }) => {
   return (
     <html lang = "en">
         <body className='app app-background'>
-        <Nav />
+        <Nav className='z-50'/>
             {children}
         <Footer />
         </body>

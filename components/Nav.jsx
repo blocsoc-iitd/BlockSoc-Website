@@ -26,7 +26,7 @@ const Nav = () => {
     };
   
     return (
-        <div className="z-30 w-screen">
+        <div className="z-50 w-screen">
             <header className="fixed top-0 left-1/2 transform -translate-x-1/2 w-screen bg-black">
                 <div className="container flex justify-between items-center h-full my-2">
                 <div className="flex items-center sm:space-x-8 ">

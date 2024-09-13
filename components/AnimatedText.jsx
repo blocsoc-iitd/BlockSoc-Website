@@ -12,7 +12,7 @@ const AnimatedText = ({ quote }) => {
     }, []);
 
   return (
-    <div className="text-center font-bold">
+    <div className="center-text font-bold">
       {quote.split(" ").map((word, index) => (
         <span
           key={index}

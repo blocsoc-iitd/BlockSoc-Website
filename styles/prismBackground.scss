@@ -1,0 +1,84 @@
+$n-prisms: 10; //same as in DOM
+$height: 9vw;
+$base: 9vw;
+$base-c: rgb(113, 213, 191) #42a098;
+$lat-c: #5ecebd #08ed8e;
+$radius: 4*$height;
+$base-angle: 360deg/$n-prisms;
+$t: 2s;
+
+@mixin mix-me($c, $k) {
+  background: mix(nth($c, 1), nth($c, 2), $k);
+}
+
+
+
+.assembly {
+  &, * {
+    position: absolute;
+    left: 50%;
+    transform-style: preserve-3d;
+  }
+  transform: rotateX(-30deg);
+}
+
+.positioner {
+  @for $i from 0 to $n-prisms {
+    $curr-angle: $i*$base-angle;
+    $k: (1 + cos($curr-angle))*50%;
+
+    &:nth-child(#{$i + 1}) {
+      transform: rotateY($curr-angle) translateZ($radius) rotateX(70deg);
+
+      .prism {
+        animation-delay: -$i*$t/$n-prisms;
+
+        &__face {
+          @include mix-me($lat-c, $k);
+
+          &:nth-child(n + 5) {
+            @include mix-me($base-c, $k);
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes rot {
+  75%, 100% {
+    transform: rotateX(-.5turn);
+  }
+}
+
+.prism {
+  animation: rot $t ease-in-out infinite;
+
+  &__face {
+    margin: -.5*$height (-.5*$base);
+    width: $base;
+    height: $height;
+    backface-visibility: hidden;
+
+    &:nth-child(n + 5) {
+      margin-top: -.5*$base;
+      height: $base;
+    }
+
+    &:nth-child(-n+4):nth-child(2n) {
+      $bfix: .7;
+      -webkit-filter: brightness($bfix);
+      filter: brightness($bfix);
+    }
+
+    @for $i from 0 to 6 {
+      &:nth-child(#{$i + 1}) {
+        transform: 
+          if($i < 4, 
+            rotateY($i*90deg), 
+            rotateX(pow(-1, $i)*90deg))
+          translateZ(.5*if($i < 4, $base, $height));
+      }
+    }
+  }
+}

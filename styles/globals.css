@@ -17,12 +17,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 .app-background {
-  background: linear-gradient(to bottom,#000000,#000000, #202244,#885cc5);
+  background: linear-gradient(to bottom,#000000,#000000, #000000,#000000);
   min-height: 100vh;
 }
 
@@ -30,7 +31,7 @@ header, footer {
   background: transparent;
 }
 header {
-  z-index: 20;
+  z-index: 30;
 }
 
 @keyframes lineFadeIn {
@@ -189,8 +190,8 @@ header {
 
 .scrollReveal {
   position: relative;
-  color:#252839;
-  -webkit-text-stroke: 0.1vw #383d52;
+  color:transparent;
+  -webkit-text-stroke: 0.1vw transparent;
 }
 .scrollReveal::before {
   content: attr(data-text);
@@ -199,16 +200,13 @@ header {
   left:0;
   width: 0;
   height: 100%;
-  color:#01fe87;
-  -webkit-text-stroke: 0vw #383d52;
-  border-right: 2px solid #01fe87;
+  color:#ff8502;
+  -webkit-text-stroke: 0vw #000000;
   overflow: hidden;
   animation: animate 5s linear infinite;
 }
 
 @keyframes animate {
-
-
   0% ,10%,100%{
       width: 0;
   }
