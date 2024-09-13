@@ -34,9 +34,14 @@ const Nav = () => {
                     href="/"
                     className="text-xl ml-6 text-white relative hover:text-neonBlue  transition-all duration-200"
                     >
-                    <Image src={logo} alt="Blockchain Society Logo" className="w-[7vh] h-[7vh] ml-4 md:ml-12 " />
+                        <Image src={logo} alt="Blockchain Society Logo" className="w-[7vh] h-[7vh] ml-4 md:ml-12 " />
                     </Link>
-                    <h1 className="text-white font-bold ml-2 text-5xl md:text-3xl">BlocSoc IITD</h1>
+                    <Link
+                    href="/"
+                    className="text-xl ml-6 text-white relative hover:text-neonBlue  transition-all duration-200"
+                    >
+                        <h1 className="text-white font-bold ml-2 text-5xl md:text-3xl">BlocSoc IITD</h1>
+                    </Link>
                 </div>
                 <nav className="hidden md:flex space-x-4 text-white text-xl mr-8">
                     <Link

@@ -4,7 +4,7 @@ import Image from 'next/image';
 import logo from '@public/assets/ethereumLogo.svg';
 import image1 from '@public/assets/image1.jpg'; 
 import image2 from '@public/assets/image2.jpg';
-import image5 from '@public/assets/image5.png';
+import image11 from '@public/assets/image11.png';
 import BTP from '@public/assets/BelieveTheProcess.png';
 import image7 from '@public/assets/image7.jpg'
 import image6 from '@public/assets/image6.jpg';
@@ -156,13 +156,13 @@ const Home = () => {
               <Image src={image1} alt="Block-5" className="w-full h-full object-cover rounded-lg" />
             </div>
             <div className="flex flex-col space-y-0.5" style={{ width: '12vw' }}>
-              <div className="border-2 border-neonBlue bg-white rounded-3xl flex items-center justify-center overflow-hidden bg-cover bg-center"  
+              <div className="border-2 border-neonBlue rounded-3xl flex items-center justify-center overflow-hidden bg-cover bg-center"  
               style={{ width: '12vw', height: '25vh'}}>
                 <Image src={logo} alt="Logo" className="floating-logo w-[15vh] h-[15vh]" />
               </div>
-              <div className="border-2 border-neonBlue bg-white rounded-3xl flex items-center justify-center overflow-hidden bg-cover bg-center" 
+              <div className="border-2 border-neonBlue rounded-3xl flex items-center justify-center overflow-hidden bg-cover bg-center" 
               style={{width: '12vw', height: '25vh'}}>
-                <Image src={image5} alt="Logo" className="floating-logo w-[10vw] h-[10vw]" />
+                <Image src={image11} alt="Logo" className="floating-logo w-[10vw] h-[10vw]" />
               </div>
             </div>
             
@@ -195,7 +195,7 @@ const Home = () => {
               <div className="card1 flex items-center"
               style={{ width: '57vw', height: '50vh' }}>
               <p className="text-white m-4 text-3xl text-center ">
-                At the Blockchain Society, we are dedicated to exploring and advancing the world of blockchain technology. Our community consists of enthusiasts, developers, and researchers who are passionate about crypto, DeFi, Web3.0, and ZK proofs. We believe in the transformative power of blockchain and its potential to revolutionize various industries              </p>
+                At BlocSoc, we are dedicated to exploring and advancing the world of blockchain technology. Our community consists of enthusiasts, developers, and researchers who are passionate about crypto, DeFi, Web3.0, and ZK proofs. We believe in the transformative power of blockchain and its potential to revolutionize various industries              </p>
               </div>
             </div>
             {/* Second row  col2 */}
@@ -237,7 +237,7 @@ const Home = () => {
           </div>
           <div className="flex flex-wrap w-full h-full">
             {/* Second row */}
-            <div className="border-2 border-neonBlue bg-white rounded-3xl flex items-center justify-center overflow-hidden bg-cover bg-center" 
+            <div className="border-2 border-neonBlue rounded-3xl flex items-center justify-center overflow-hidden bg-cover bg-center" 
             style={{width: '20vw', height: '20vw'}}>
               <Image src={logo} alt="Logo" className="floating-logo w-[10vw] h-[10vw]" />
             </div>
@@ -248,9 +248,9 @@ const Home = () => {
                   <div class="font-bold  hero glitch layers" data-text="Verify"><span>Verify</span></div>
               </div>            
             </div>
-            <div className="border-2 border-neonBlue bg-white rounded-3xl flex items-center justify-center overflow-hidden bg-cover bg-center" 
+            <div className="border-2 border-neonBlue rounded-3xl flex items-center justify-center overflow-hidden bg-cover bg-center" 
             style={{width: '20vw', height: '20vw'}}>
-              <Image src={image5} alt="Logo" className="floating-logo w-[15vw] h-[15vw]" />
+              <Image src={image11} alt="Logo" className="floating-logo w-[15vw] h-[15vw]" />
             </div>
           </div>
           {/* Third row */}
@@ -265,7 +265,7 @@ const Home = () => {
           <div className="card1"
             style={{ width: '95vw'}}>
               <p className="text-white m-4 text-xl text-center">
-                At the Blockchain Society, we are dedicated to exploring and advancing the world of blockchain technology. Our community consists of enthusiasts, developers, and researchers who are passionate about crypto, DeFi, Web3.0, and ZK proofs. We believe in the transformative power of blockchain and its potential to revolutionize various industries
+                At the BlocSoc, we are dedicated to exploring and advancing the world of blockchain technology. Our community consists of enthusiasts, developers, and researchers who are passionate about crypto, DeFi, Web3.0, and ZK proofs. We believe in the transformative power of blockchain and its potential to revolutionize various industries
               </p>
           </div>
           {/*Fifth row */}
@@ -302,11 +302,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      
-      {/* Third Part: To be added later */}
-      <section className="w-screen h-48 bg-transparent flex items-center justify-center">
-        <p className="text-white">If needed, content for the third part will be added here.</p>
-      </section>
+
     </div>
   );
 };

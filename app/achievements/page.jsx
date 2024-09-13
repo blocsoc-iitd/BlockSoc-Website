@@ -4,11 +4,14 @@ import React, { useEffect } from 'react';
 
 
 const achievements = [
+  { date: 'September 2024', title: 'Avalanche Bounty', description: 'Our team received Avalanche bounty for building SVM L1s on Avalanche, demonstrating our expertise in building layer 1s and SVM.' },
+  { date: 'August 2024', title: 'Eth Online 2024', description: 'Our team stood 3rd on cantina track and secured a $2000 prize, demonstrating our expertise in building rollups..' },
+  { date: 'June 2024', title: 'BlockMagic', description: 'Our team won the Avalanche track of the BlockMagic hackathon, for building SNARK Accounts on Hypersdk, demonstrating our expertise in zero knowledge and vm development.' },
   { date: 'March 2024', title: 'EthMumbai 2024', description: "Our institute's team of nine students participated in an international hackathon organized by the Ethereum Foundation in Mumbai. We won the main track and secured a $2050 prize, showcasing our expertise and innovation in the Web3 domain." },
   { date: 'March 2024', title: 'Speakers at IITR Cognizance 2024', description: 'Our teams from DevClub and BlocSoc participated in this fest to explore the Web3 landscape in other colleges, gaining insights and experience. The event was a blend of technical challenges and networking opportunities' },
-  { date: 'December 2023', title: 'EthIndia 2023', description: 'An international hackathon organized by the Ethereum Foundation in Bengaluru during December 2023. This prestigious event attracted global talent and offered our students a chance to compete at the highest level. Seven students from our college participated, showcasing innovative projects and competing for various prizes.' },
+  { date: 'December 2023', title: 'Constellation 2023', description: 'Out team won the Avalanche track of Constellation hackathon, for building Hyperwasm, a wasm runtime on Hypersdk, demonstrating our expertise in vm development.' },
+  { date: 'December 2023', title: 'EthIndia 2023', description: 'An international hackathon organized by the Ethereum Foundation in Bengaluru during December 2023. Seven students from our college participated, showcasing innovative projects and competing for various prizes and working on various ecosystems.' },
   { date: 'October 2023', title: 'Unfold 2023', description: 'This hackathon provided an excellent opportunity for freshers to gain exposure to the Web3 ecosystem. Two of our second-year students participated, gaining valuable experience in blockchain development and networking with industry professionals' },
-  { date: 'February 2023', title: 'Achievement 1', description: 'Description of achievement 1.' },
 ];
 
 const Achievements = () => {
