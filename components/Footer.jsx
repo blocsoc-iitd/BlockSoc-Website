@@ -1,14 +1,14 @@
 import Image from 'next/image';
-import linkedinIcon from '@public/assets/linkedin.svg';
-import twitterIcon from '@public/assets/twitter.svg';
-import githubIcon from '@public/assets/github.svg';
-import instagramIcon from '@public/assets/instagram.svg';
+import linkedinIcon from '@public/assets/icons/linkedin.svg';
+import twitterIcon from '@public/assets/icons/twitter.svg';
+import githubIcon from '@public/assets/icons/github.svg';
+import instagramIcon from '@public/assets/icons/instagram.svg';
 
 const socialLinks = [
-  { href: "https://x.com/blocsociitd", src: twitterIcon, alt: "Twitter" },
-  { href: "https://github.com/blocsoc-iitd", src: githubIcon, alt: "GitHub" },
-  { href: "https://instagram.com", src: instagramIcon, alt: "Instagram" },
-  { href: "https://linkedin.com", src: linkedinIcon, alt: "LinkedIn" },
+  { href: "https://x.com/0xblocsoc/", src: twitterIcon, alt: "Twitter" },
+  { href: "https://github.com/blocsoc-iitd/", src: githubIcon, alt: "GitHub" },
+  { href: "https://instagram.com/blocsoc.eth/", src: instagramIcon, alt: "Instagram" },
+  { href: "https://linkedin.com/company/blockchain-society-iit-delhi/", src: linkedinIcon, alt: "LinkedIn" },
 ];
 
 const Footer = () => {

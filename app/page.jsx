@@ -5,13 +5,12 @@ import { useEffect } from 'react';
 import HomeLarge from '@components/HomeLarge';
 import HomeMedium from '@components/HomeMedium';
 import HomeSmall from '@components/HomeSmall';
-
 const Home = () => {
 
     useEffect (() => {
         AOS.init({
             duration: 1000, // You can customize the duration here
-            once: false, // Whether animation should happen only once - while scrolling down
+            once: true, // Whether animation should happen only once - while scrolling down
           });
         }, []);
 

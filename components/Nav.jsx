@@ -5,11 +5,11 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { MdMenu, MdClose } from 'react-icons/md'; // Importing icons from react-icons/md
 
-import logo from '@public/assets/logo.png'; 
-import linkedinIcon from '@public/assets/linkedin.svg';
-import twitterIcon from '@public/assets/twitter.svg';
-import githubIcon from '@public/assets/github.svg';
-import instagramIcon from '@public/assets/instagram.svg';
+import logo from '@public/assets/og_logo.png'; 
+import linkedinIcon from '@public/assets/icons/linkedin.svg';
+import twitterIcon from '@public/assets/icons/twitter.svg';
+import githubIcon from '@public/assets/icons/github.svg';
+import instagramIcon from '@public/assets/icons/instagram.svg';
 
 const socialLinks = [
   { href: "https://x.com/blocsociitd", src: twitterIcon, alt: "Twitter" },

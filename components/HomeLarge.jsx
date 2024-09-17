@@ -1,13 +1,11 @@
 
 import Image from 'next/image';
-import logo from '@public/assets/ethereumLogo.svg';
-import image1 from '@public/assets/image1.jpg'; 
-import image2 from '@public/assets/image2.jpg';
-import image11 from '@public/assets/image11.png';
-import BTP from '@public/assets/BelieveTheProcess.png';
-import image7 from '@public/assets/image7.jpg'
-import image6 from '@public/assets/image6.jpg';
-import image10 from '@public/assets/image10.jpg';
+import logo from '@public/assets/home/ethereumLogo.svg';
+import image1 from '@public/assets/home/image1.jpg'; 
+import image2 from '@public/assets/home/image2.jpg';
+import image11 from '@public/assets/home/image11.png';
+import BTP from '@public/assets/home/BelieveTheProcess.png';
+import image6 from '@public/assets/home/image6.jpg';
 
 import AnimatedText from '@components/AnimatedText';
 import '@/styles/prismBackground.scss';         
@@ -133,7 +131,7 @@ const HomeLarge = () => {
                   </div>
                   <div className="border-2 border-neonBlue rounded-3xl flex items-center justify-center overflow-hidden bg-cover bg-center" 
                   style={{ width: '12vw', height: '25vh'}}>
-                    <Image src={image7} alt="Block-10" className="w-full h-full object-cover" />
+                    <Image src={image6} alt="Block-10" className="w-full h-full object-cover" />
                   </div>
                 </div>
                 <div className="card1 flex items-center"
