@@ -126,7 +126,7 @@ const HomeLarge = () => {
                   style={{ width: '45vw', height: '25vh'}}
                   >
                     <div className=" flex items-center overflow-hidden bg-cover ">
-                        <div class="font-bold hero glitch layers" data-text="Don't Trust, Verify"><span>Don't Trust, Verify</span></div>
+                        <div className="font-bold hero glitch layers" data-text="Don't Trust, Verify"><span>Don't Trust, Verify</span></div>
                     </div>
                   </div>
                   <div className="border-2 border-neonBlue rounded-3xl flex items-center justify-center overflow-hidden bg-cover bg-center" 

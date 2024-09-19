@@ -1,0 +1,147 @@
+
+.ProfileCard {
+    padding: 95px 15px 55px 15px;
+    height: 475px;
+    background: conic-gradient(from -90deg at 50% 105%, white, orchid);
+    border-radius: 10px;
+    margin: 35px auto;
+    width:250px;
+    padding: 95px 15px 55px 15px;
+    box-shadow: 0 19px 38px rgba(126, 55, 158, .017), 0 15px 12px rgba(43, 17, 46, .19);
+    position: relative;
+    overflow: hidden;
+}
+.header-image {
+    width: 100%;
+    height: 150px; 
+    position: absolute;
+    top: 0;
+    left: -10%;
+    right: -10%;
+    margin: 0 auto;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.OverlayElm {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(45deg, #e359a7, #643d80);
+    background-size: cover;
+    opacity: .65;
+    z-index: 2;
+}
+
+.ProfileImage {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 2px 22px 0px rgba(45, 41, 54, .55), 0px 0px 0px 4px rgba(45, 41, 54, 0.19);
+    z-index: 3;
+}
+
+/* .Pcontainer {
+    position: relative;
+    height: 250px;
+    width: 200px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease-out;
+  }
+  .Pcontainer:hover {
+    box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
+  }
+  .Pcontainer .image {
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    transition: transform 0.3s ease-out;
+  }
+  .Pcontainer:hover .image {
+    transform: translateY(-100px);
+  }
+  .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease-out;
+  }
+  .Pcontainer:hover .image img {
+    opacity: 0.7;
+  }
+  .Pcontainer:hover .image {
+    transform: translateY(-100px);
+  }
+  .Pcontainer ul {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    list-style: none;
+  }
+  ul li {
+    margin: 0 5px;
+  }
+  ul li a {
+    display: block;
+    height: 50px;
+    width: 50px;
+    color: #000;
+    line-height: 50px;
+    font-size: 20px;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translateY(200px);
+    background: #fff;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  }
+  .Pcontainer:hover > ul > li > a {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .Pcontainer:hover > ul > li:nth-child(2) a {
+    transition-delay: 0.1s;
+  }
+  .Pcontainer:hover > ul > li:nth-child(3) a {
+    transition-delay: 0.2s;
+  }
+  .Pcontainer:hover > ul > li:nth-child(4) a {
+    transition-delay: 0.3s;
+  }
+  .Pcontainer:hover > ul > li:nth-child(5) a {
+    transition-delay: 0.4s;
+  }
+  .Pcontainer .content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+  }
+  .info {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+    color: #000;
+    line-height: 26px;
+  }
+  .info h2 {
+    font-size: 27px;
+    margin: 3px 0;
+  }
+  .info span {
+    color: #1a1a1a;
+  } */

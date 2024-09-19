@@ -102,8 +102,8 @@ const HomeSmall = () => {
             <div className="border-4 border-neonRed rounded-3xl flex items-center justify-center overflow-hidden bg-cover " 
             style={{ width: '55vw', height: '20vw'}}>
               <div className=" flex flex-col space-y-2 items-center ">
-                  <div class="font-bold  hero glitch layers" data-text="Don't Trust,"><span>Don't Trust,</span></div>
-                  <div class="font-bold  hero glitch layers" data-text="Verify"><span>Verify</span></div>
+                  <div className="font-bold  hero glitch layers" data-text="Don't Trust,"><span>Don't Trust,</span></div>
+                  <div className="font-bold  hero glitch layers" data-text="Verify"><span>Verify</span></div>
               </div>            
             </div>
             <div className="border-2 border-neonBlue rounded-3xl flex items-center justify-center overflow-hidden bg-cover bg-center" 
